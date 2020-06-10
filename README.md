@@ -1,9 +1,9 @@
 # GeoVizApp
 使用GeoSpark + Zeppelin对滴滴轨迹数据可视化
 
-![image-20200610103429959](/Users/2010youy01/Desktop/grad/GeoVizApp/GeoVizApp/image-20200610103429959.png)
+![image-20200610103429959](image-20200610103429959.png)
 
-![image-20200610103412735](/Users/2010youy01/Desktop/grad/GeoVizApp/GeoVizApp/image-20200610103412735.png)
+![image-20200610103412735](image-20200610103412735.png)
 
 ## 数据
 
