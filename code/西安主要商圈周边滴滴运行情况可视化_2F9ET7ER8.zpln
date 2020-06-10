@@ -1,0 +1,654 @@
+{
+  "paragraphs": [
+    {
+      "title": "查询选项",
+      "text": "%angular\n\n\u003cform class\u003d\"form-inline\"\u003e\n  \u003cdiv class\u003d\"form-group\" ng-model-options\u003d\"{\n  timezone:\u0027-0000\u0027\n}\"\u003e\n    \u003clabel for\u003d\"superheroId\"\u003e开始时间： \u003c/label\u003e\n    \u003cinput type\u003d\"datetime-local\" min\u003d\"2016-10-01T00:00:00\" max\u003d\"2016-10-31T23:59:59\" class\u003d\"form-control\" id\u003d\"from\" placeholder\u003d\"yyyy-MM-ddTHH:mm:ss\" ng-model\u003d\"startTime\"\u003e\u003c/input\u003e\n    \u003cbr\u003e\n    \u003clabel for\u003d\"superheroId\"\u003e结束时间： \u003c/label\u003e\n    \u003cinput type\u003d\"datetime-local\" min\u003d\"2016-10-01T00:00:00\" max\u003d\"2016-10-31T23:59:59\" class\u003d\"form-control\" id\u003d\"to\" placeholder\u003d\"yyyy-MM-ddTHH:mm:ss\" ng-model\u003d\"endTime\"\u003e\u003c/input\u003e\n    \u003cbr\u003e\u003cbr\u003e\n     \u003clabel for\u003d\"superheroId\"\u003e查询半径（米）： \u003c/label\u003e\n    \u003cinput type\u003d\"number\" min\u003d\"0\" max\u003d\"1000\" ng-model\u003d\"radius\"\u003e\u003c/input\u003e\n  \u003c/div\u003e\u003cbr\u003e\n  \u003cbutton type\u003d\"submit\" class\u003d\"btn btn-primary\" ng-click\u003d\"\n  z.angularBind(\u0027startTime\u0027,startTime,\u002720190227-203333_1886473378\u0027);\n  z.angularBind(\u0027endTime\u0027,endTime,\u002720190227-203333_1886473378\u0027);\n   z.angularBind(\u0027radius\u0027,radius,\u002720190227-203333_1886473378\u0027);\n  z.runParagraph(\u002720190227-203333_1886473378\u0027);\n  z.runParagraph(\u0027paragraph_1589598031135_1749808555\u0027);\n    z.runParagraph(\u0027paragraph_1589610220248_-661884882\u0027);\n    z.runParagraph(\u002720190227-203400_1171762279\u0027);\n    z.runParagraph(\u002720190227-203351_1519829707\u0027);\n  \"\u003e 执行 \u003c/button\u003e\n\u003c/form\u003e",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-01 16:32:25.097",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 4.0,
+        "editorMode": "ace/mode/text",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 107.4,
+              "optionOpen": false
+            }
+          }
+        },
+        "enabled": true,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "ANGULAR",
+            "data": "\u003cform class\u003d\"form-inline\"\u003e\n  \u003cdiv class\u003d\"form-group\" ng-model-options\u003d\"{\n  timezone:\u0027-0000\u0027\n}\"\u003e\n    \u003clabel for\u003d\"superheroId\"\u003e开始时间： \u003c/label\u003e\n    \u003cinput type\u003d\"datetime-local\" min\u003d\"2016-10-01T00:00:00\" max\u003d\"2016-10-31T23:59:59\" class\u003d\"form-control\" id\u003d\"from\" placeholder\u003d\"yyyy-MM-ddTHH:mm:ss\" ng-model\u003d\"startTime\"\u003e\u003c/input\u003e\n    \u003cbr\u003e\n    \u003clabel for\u003d\"superheroId\"\u003e结束时间： \u003c/label\u003e\n    \u003cinput type\u003d\"datetime-local\" min\u003d\"2016-10-01T00:00:00\" max\u003d\"2016-10-31T23:59:59\" class\u003d\"form-control\" id\u003d\"to\" placeholder\u003d\"yyyy-MM-ddTHH:mm:ss\" ng-model\u003d\"endTime\"\u003e\u003c/input\u003e\n    \u003cbr\u003e\u003cbr\u003e\n     \u003clabel for\u003d\"superheroId\"\u003e查询半径（米）： \u003c/label\u003e\n    \u003cinput type\u003d\"number\" min\u003d\"0\" max\u003d\"1000\" ng-model\u003d\"radius\"\u003e\u003c/input\u003e\n  \u003c/div\u003e\u003cbr\u003e\n  \u003cbutton type\u003d\"submit\" class\u003d\"btn btn-primary\" ng-click\u003d\"\n  z.angularBind(\u0027startTime\u0027,startTime,\u002720190227-203333_1886473378\u0027);\n  z.angularBind(\u0027endTime\u0027,endTime,\u002720190227-203333_1886473378\u0027);\n   z.angularBind(\u0027radius\u0027,radius,\u002720190227-203333_1886473378\u0027);\n  z.runParagraph(\u002720190227-203333_1886473378\u0027);\n  z.runParagraph(\u0027paragraph_1589598031135_1749808555\u0027);\n    z.runParagraph(\u0027paragraph_1589610220248_-661884882\u0027);\n    z.runParagraph(\u002720190227-203400_1171762279\u0027);\n    z.runParagraph(\u002720190227-203351_1519829707\u0027);\n  \"\u003e 执行 \u003c/button\u003e\n\u003c/form\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589381297576_-215378572",
+      "id": "paragraph_1589168039542_-220357370",
+      "dateCreated": "2020-05-13 22:48:17.577",
+      "dateStarted": "2020-06-01 16:32:25.125",
+      "dateFinished": "2020-06-01 16:32:25.948",
+      "status": "FINISHED"
+    },
+    {
+      "title": "各个商圈位置",
+      "text": "%sql\nSELECT *\nFROM wktpoint",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-01 16:41:29.474",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 4.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "geospark-zeppelin",
+              "height": 463.6,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "geom": "string",
+                      "name": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "geospark-zeppelin": {
+                  "geometry": {
+                    "name": "geom",
+                    "index": 0.0,
+                    "aggr": "sum"
+                  },
+                  "info": {
+                    "name": "name",
+                    "index": 1.0,
+                    "aggr": "sum"
+                  }
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "keys": [
+                {
+                  "name": "geom",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [],
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "geom\tname\nPOINT (108.96294583294676 34.27006638793275)\t解放路\nPOINT (108.94715298626707 34.26988906313337)\t北大街\nPOINT (108.94702424023436 34.26130609581325)\t钟楼\nPOINT (108.94702424023436 34.25550677705698)\t南大街 \nPOINT (108.93903125736998 34.25944397281842)\t西大街\nPOINT (108.95420183155821 34.25962131964191)\t东大街\nPOINT (108.94694913838194 34.24480270326526)\t南门\nPOINT (108.93916000340269 34.24118411689473)\t小雁塔\nPOINT (108.94667018864439 34.22285820077161)\t小寨\nPOINT (108.96398653004454 34.22278723109942)\t大雁塔\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589381297589_1705012616",
+      "id": "20190227-203351_1519829707",
+      "dateCreated": "2020-05-13 22:48:17.589",
+      "dateStarted": "2020-06-01 16:41:30.273",
+      "dateFinished": "2020-06-01 16:41:35.776",
+      "status": "FINISHED"
+    },
+    {
+      "title": "所选时段各大商圈附近滴滴车辆数量图",
+      "text": "%sql\nselect * from carsNearMalls order by carsNearMalls.carCount",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-01 16:41:29.455",
+      "config": {
+        "colWidth": 4.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 514.006,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "mall": "string",
+                      "count(1)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "pieChart": {}
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "mall",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "carCount",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "mall\tcarCount\n西大街\t28\n小雁塔\t34\n东大街\t38\n大雁塔\t47\n南门\t47\n南大街 \t55\n解放路\t62\n北大街\t74\n钟楼\t77\n小寨\t95\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589598031135_1749808555",
+      "id": "paragraph_1589598031135_1749808555",
+      "dateCreated": "2020-05-16 11:00:31.135",
+      "dateStarted": "2020-06-01 16:41:29.662",
+      "dateFinished": "2020-06-01 16:41:40.443",
+      "status": "FINISHED"
+    },
+    {
+      "title": "所选时段滴滴车辆位置图",
+      "text": "%sql\nSELECT *\nFROM images ",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-01 16:41:29.467",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "geospark-zeppelin",
+              "height": 297.884,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "image0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {
+                          "priority": 0.0,
+                          "direction": "asc"
+                        },
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "boundary1",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "x2",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1.0,
+                      "paginationPageSize": 250.0
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "names": {
+                      "image": "string",
+                      "boundary": "string",
+                      "I am the map center!": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "zeppelin-leaflet": {},
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "geospark-zeppelin": {
+                  "mapimage": {
+                    "name": "image",
+                    "index": 0.0,
+                    "aggr": "sum"
+                  },
+                  "geometry": {
+                    "name": "boundary",
+                    "index": 1.0,
+                    "aggr": "sum"
+                  },
+                  "info": {
+                    "name": "name",
+                    "index": 3.0,
+                    "aggr": "sum"
+                  }
+                }
+              },
+              "keys": [
+                {
+                  "name": "image",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "boundary",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "image\tboundary\n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\tPOLYGON ((108.91135 34.20551, 108.91135 34.28009, 108.99857 34.28009, 108.99857 34.20551, 108.91135 34.20551))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589381297588_-332066297",
+      "id": "20190227-203400_1171762279",
+      "dateCreated": "2020-05-13 22:48:17.588",
+      "dateStarted": "2020-06-01 16:41:30.072",
+      "dateFinished": "2020-06-01 16:42:06.248",
+      "status": "FINISHED"
+    },
+    {
+      "title": "所选时段全城滴滴轨迹热度图",
+      "text": "%sql\nSELECT *\nFROM heatmap",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-01 16:41:29.461",
+      "config": {
+        "colWidth": 6.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "geospark-zeppelin",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "image": "string",
+                      "boundary": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "geospark-zeppelin": {
+                  "mapimage": {
+                    "name": "image",
+                    "index": 0.0,
+                    "aggr": "sum"
+                  },
+                  "geometry": {
+                    "name": "boundary",
+                    "index": 1.0,
+                    "aggr": "sum"
+                  }
+                }
+              }
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "image\tboundary\n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\u003d\u003d\tPOLYGON ((108.91135 34.20551, 108.91135 34.28009, 108.99857 34.28009, 108.99857 34.20551, 108.91135 34.20551))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589610220248_-661884882",
+      "id": "paragraph_1589610220248_-661884882",
+      "dateCreated": "2020-05-16 14:23:40.249",
+      "dateStarted": "2020-06-01 16:41:29.871",
+      "dateFinished": "2020-06-01 16:41:59.958",
+      "status": "FINISHED"
+    },
+    {
+      "text": "import org.datasyslab.geosparksql.utils.GeoSparkSQLRegistrator\nimport org.datasyslab.geosparkviz.sql.utils.GeoSparkVizRegistrator\nimport org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}\nimport org.apache.spark.sql.types.TimestampType\nimport java.sql.Timestamp\n\n// Zeppelin creates and injects sc (SparkContext) and sqlContext (HiveContext or SqlContext)\n// So you don\u0027t need create them manually\n\nGeoSparkSQLRegistrator.registerAll(spark)\nGeoSparkVizRegistrator.registerAll(spark)\n\n//File Path\n//Files: order\txa1\txa15\txa3\txa30\txa7\nval directoryPath \u003d \"/Users/2010youy01/Desktop/grad/data/\"\n\n// Convert time from angular input string to Timestamp type.\ndef strToTimestamp(s: String): Long \u003d {\n  Timestamp.valueOf(s.replace(\"T\",\" \").replace(\"Z\", \"\")).getTime()/1000\n}\n\n// Get time string from angular input and convert to Timestamp\nval startTime \u003d strToTimestamp(z.angular(\"startTime\").toString)\nval endTime \u003d strToTimestamp(z.angular(\"endTime\").toString)\n\n// Get radius from angular input, and bind with Zeppelin context\nval radius \u003d z.angular(\"radius\")\nz.put(\"radius\", radius)\n\n//Read trajectory data.\nval pointdf \u003d spark.read\n    .format(\"csv\")\n    .option(\"delimiter\", \",\")\n    .option(\"header\", \"false\")\n    .load(directoryPath + \"xa30\")\n    .filter($\"_c2\".between(startTime, endTime))\n    .persist()\n\n//Read POI(malls) data.\nval mallsDF \u003d spark.read\n    .format(\"csv\")\n    .option(\"delimiter\", \",\")\n    .option(\"header\", \"false\")\n    .load(directoryPath + \"malls.csv\")\n    .persist()\n\npointdf.createOrReplaceTempView(\"pointtable\")\nmallsDF.createOrReplaceTempView(\"malls\")\n\n\n//Create shape.\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pointtable AS\n    |SELECT ST_Point(cast(pointtable._c3 as Decimal(24,20)),cast(pointtable._c4 as Decimal(24,20))) as position, pointtable._c0 as driverID\n    |FROM pointtable\n  \"\"\".stripMargin).persist()\n  \nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW malls AS\n    |SELECT ST_Point(cast(malls._c0 as Decimal(24,20)), cast(malls._c1 as Decimal(24, 20))) as location, malls._c2 as name\n    |FROM malls\n  \"\"\".stripMargin).persist()\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW wktpoint AS\n    |SELECT ST_AsText(location) as geom, malls.name as name\n    |FROM malls\n  \"\"\".stripMargin)\nspark.table(\"pointtable\").show()\nspark.table(\"malls\").show()\n\n/* Create image for scatter-plot of cars near the shopping district */\nspark.sql(\n  s\"\"\"\n    |CREATE OR REPLACE TEMP VIEW join AS\n    |SELECT malls.name as mall, pointtable.driverID as id, first(pointtable.position) as carPos\n    |FROM malls, pointtable\n    |WHERE ST_Distance(ST_Transform(malls.location, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027), ST_Transform(pointtable.position, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027)) \u003c ${radius}\n    |GROUP BY malls.name, pointtable.driverID\n  \"\"\".stripMargin)\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW carsNearMalls AS\n    |SELECT mall, count(*) as carCount\n    |FROM join\n    |GROUP BY join.mall\n  \"\"\".stripMargin)\nspark.table(\"join\").show()\nspark.table(\"carsNearMalls\").show()\n\n  \nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW boundtable AS\n    |SELECT ST_Envelope_Aggr(position) as bound FROM pointtable\n  \"\"\".stripMargin)\nval boundDF \u003d spark.sql(\"SELECT * FROM boundtable\")\n//z.show(boundDF)\n\nval pixelsDF \u003d spark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixels AS\n    |SELECT pixel, carPos FROM join\n    |LATERAL VIEW ST_Pixelize(ST_Transform(carPos, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027), 512, 512, (SELECT ST_Transform(bound, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027) FROM boundtable)) AS pixel\n  \"\"\".stripMargin)\n//pixelsDF.printSchema()\n//spark.table(\"pixels\").show()\n\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixelaggregates AS\n    |SELECT pixel, count(*) as weight\n    |FROM pixels\n    |GROUP BY pixel\n  \"\"\".stripMargin)\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW images AS\n    |SELECT ST_EncodeImage(ST_Render(pixel, ST_Colorize(weight, (SELECT max(weight) FROM pixelaggregates), \u0027white\u0027))) AS image, (SELECT ST_AsText(bound) FROM boundtable) AS boundary\n    |FROM pixelaggregates\n  \"\"\".stripMargin).persist()\n\n/* Create Heatmap for all cars in the city */\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixels AS\n    |SELECT pixel, position FROM pointtable\n    |LATERAL VIEW ST_Pixelize(ST_Transform(position, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027), 256, 256, (SELECT ST_Transform(bound, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027) FROM boundtable)) AS pixel\n  \"\"\".stripMargin)\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixelaggregates AS\n    |SELECT pixel, count(*) as weight\n    |FROM pixels\n    |GROUP BY pixel\n  \"\"\".stripMargin)\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW heatmap AS\n    |SELECT ST_EncodeImage(ST_Render(pixel, ST_Colorize(weight, (SELECT max(weight) FROM pixelaggregates)))) AS image, (SELECT ST_AsText(bound) FROM boundtable) AS boundary\n    |FROM pixelaggregates\n  \"\"\".stripMargin).persist()\n\n/*\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW wktpoint AS\n    |SELECT ST_AsText(shape) as geom\n    |FROM pointtable\n  \"\"\".stripMargin)\n  \n\n  spark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pointtable AS\n    |SELECT *\n    |FROM pointtable\n    |WHERE ST_Contains(ST_PolygonFromEnvelope(-126.790180,24.863836,-64.630926,50.000),shape)\n  \"\"\".stripMargin)\n */\n \n  ",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-01 16:41:29.450",
+      "config": {
+        "lineNumbers": true,
+        "tableHide": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 4.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "_c0",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "_c1",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {
+          "name": "5",
+          "time": "1478930901"
+        },
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.lang.NullPointerException\n  ... 45 elided\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589381297584_-1241981637",
+      "id": "20190227-203333_1886473378",
+      "dateCreated": "2020-05-13 22:48:17.584",
+      "dateStarted": "2020-06-01 16:41:29.455",
+      "dateFinished": "2020-06-01 16:41:30.597",
+      "status": "ERROR"
+    },
+    {
+      "text": "%sql\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-05-16 15:04:58.741",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589612698741_-1411877821",
+      "id": "paragraph_1589612698741_-1411877821",
+      "dateCreated": "2020-05-16 15:04:58.741",
+      "status": "READY"
+    }
+  ],
+  "name": "西安主要商圈周边滴滴运行情况可视化",
+  "id": "2F9ET7ER8",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "spark-shared_process": [
+      {
+        "name": "startTime",
+        "object": "2016-10-07T14:00:00.000Z",
+        "noteId": "2F9ET7ER8",
+        "paragraphId": "20190227-203333_1886473378"
+      },
+      {
+        "name": "endTime",
+        "object": "2016-10-07T14:05:00.000Z",
+        "noteId": "2F9ET7ER8",
+        "paragraphId": "20190227-203333_1886473378"
+      },
+      {
+        "name": "radius",
+        "object": 600.0,
+        "noteId": "2F9ET7ER8",
+        "paragraphId": "20190227-203333_1886473378"
+      }
+    ]
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "report",
+    "personalizedMode": "false"
+  },
+  "info": {}
+}

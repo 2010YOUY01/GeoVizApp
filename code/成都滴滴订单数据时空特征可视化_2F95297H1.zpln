@@ -1,0 +1,776 @@
+{
+  "paragraphs": [
+    {
+      "text": "%angular\n\n\u003cform class\u003d\"form-inline\"\u003e\n  \u003cdiv class\u003d\"form-group\" ng-model-options\u003d\"{\n  timezone:\u0027-0000\u0027\n}\"\u003e\n    \u003clabel for\u003d\"superheroId\"\u003e数据统计 \u003c/label\u003e \u003cbr\u003e\n     \u003cbutton type\u003d\"submit\" class\u003d\"btn btn-primary\" ng-click\u003d\"\n      z.runParagraph(\u0027paragraph_1589201876269_1192496391\u0027);\n      z.runParagraph(\u0027paragraph_1589203857188_1146805456\u0027);\n      z.runParagraph(\u0027paragraph_1589202456362_893231553\u0027);\n      z.runParagraph(\u0027paragraph_1589261929305_1173498022\u0027);\n  \"\u003e 开始 \u003c/button\u003e \u003cbr\u003e\u003cbr\u003e\n    \n    \n    \n    \u003clabel for\u003d\"superheroId\"\u003e 指定时段滴滴订单热点图 \u003c/label\u003e \u003cbr\u003e\n    \u003clabel for\u003d\"superheroId\"\u003e开始时间： \u003c/label\u003e\n    \u003cinput type\u003d\"datetime-local\" min\u003d\"2016-11-01T00:00:00\" max\u003d\"2016-11-30T23:59:59\" class\u003d\"form-control\" id\u003d\"from\" placeholder\u003d\"yyyy-MM-ddTHH:mm:ss\" ng-model\u003d\"startTime\"\u003e\u003c/input\u003e\n    \u003cbr\u003e\n    \u003clabel for\u003d\"superheroId\"\u003e结束时间： \u003c/label\u003e\n    \u003cinput type\u003d\"datetime-local\" min\u003d\"2016-11-01T00:00:00\" max\u003d\"2016-11-30T23:59:59\" class\u003d\"form-control\" id\u003d\"to\" placeholder\u003d\"yyyy-MM-ddTHH:mm:ss\" ng-model\u003d\"endTime\"\u003e\u003c/input\u003e\n  \u003c/div\u003e\u003cbr\u003e\n  \u003cbutton type\u003d\"submit\" class\u003d\"btn btn-primary\" ng-click\u003d\"\n  z.angularBind(\u0027startTime\u0027,startTime,\u002720190227-203333_1886473378\u0027);\n  z.angularBind(\u0027endTime\u0027,endTime,\u002720190227-203333_1886473378\u0027);\n  z.runParagraph(\u002720190227-203333_1886473378\u0027);\n  z.runParagraph(\u0027paragraph_1589255785159_857517257\u0027);\n  \"\u003e 执行 \u003c/button\u003e\n\u003c/form\u003e",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-10 10:20:58.451",
+      "config": {
+        "colWidth": 4.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.lang.RuntimeException: org.apache.zeppelin.interpreter.InterpreterException: org.apache.thrift.transport.TTransportException: java.net.ConnectException: Operation timed out (Connection timed out)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:134)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.interpret(RemoteInterpreter.java:225)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:477)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:74)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:130)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:159)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.zeppelin.interpreter.InterpreterException: org.apache.thrift.transport.TTransportException: java.net.ConnectException: Operation timed out (Connection timed out)\n\tat org.apache.zeppelin.interpreter.remote.ClientFactory.create(ClientFactory.java:60)\n\tat org.apache.zeppelin.interpreter.remote.ClientFactory.create(ClientFactory.java:37)\n\tat org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:60)\n\tat org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:861)\n\tat org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.getClient(RemoteInterpreterProcess.java:51)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:126)\n\t... 13 more\nCaused by: org.apache.thrift.transport.TTransportException: java.net.ConnectException: Operation timed out (Connection timed out)\n\tat org.apache.thrift.transport.TSocket.open(TSocket.java:226)\n\tat org.apache.zeppelin.interpreter.remote.ClientFactory.create(ClientFactory.java:58)\n\t... 19 more\nCaused by: java.net.ConnectException: Operation timed out (Connection timed out)\n\tat java.net.PlainSocketImpl.socketConnect(Native Method)\n\tat java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)\n\tat java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)\n\tat java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)\n\tat java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)\n\tat java.net.Socket.connect(Socket.java:606)\n\tat org.apache.thrift.transport.TSocket.open(TSocket.java:221)\n\t... 20 more\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589255047849_1387597991",
+      "id": "paragraph_1589255047849_1387597991",
+      "dateCreated": "2020-05-12 11:44:07.849",
+      "dateStarted": "2020-06-10 10:20:58.497",
+      "dateFinished": "2020-06-10 10:22:13.838",
+      "status": "ERROR"
+    },
+    {
+      "title": "指定时间段城市滴滴订单分布",
+      "text": "%sql\nSELECT *\nFROM images",
+      "user": "anonymous",
+      "dateUpdated": "2020-05-31 16:42:30.940",
+      "config": {
+        "colWidth": 4.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "geospark-zeppelin",
+              "height": 360.922,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "image": "string",
+                      "boundary": "string",
+                      "I am the map center!": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "geospark-zeppelin": {
+                  "mapimage": {
+                    "name": "image",
+                    "index": 0.0,
+                    "aggr": "sum"
+                  },
+                  "geometry": {
+                    "name": "boundary",
+                    "index": 1.0,
+                    "aggr": "sum"
+                  }
+                }
+              }
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "image\tboundary\n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\u003d\tPOLYGON ((103.46394 30.17543, 103.46394 31.042521, 104.553802 31.042521, 104.553802 30.17543, 103.46394 30.17543))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589255785159_857517257",
+      "id": "paragraph_1589255785159_857517257",
+      "dateCreated": "2020-05-12 11:56:25.161",
+      "dateStarted": "2020-05-31 16:42:31.147",
+      "dateFinished": "2020-05-31 16:42:57.632",
+      "status": "FINISHED"
+    },
+    {
+      "title": "周末与工作日出行变化趋势",
+      "text": "%sql\nSELECT *\nFROM images",
+      "user": "anonymous",
+      "dateUpdated": "2020-05-31 16:41:18.014",
+      "config": {
+        "colWidth": 4.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "geospark-zeppelin",
+              "height": 368.011,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "image": "string",
+                      "boundary": "string",
+                      "I am the map center!": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "geospark-zeppelin": {
+                  "mapimage": {
+                    "name": "image",
+                    "index": 0.0,
+                    "aggr": "sum"
+                  },
+                  "geometry": {
+                    "name": "boundary",
+                    "index": 1.0,
+                    "aggr": "sum"
+                  },
+                  "info": {
+                    "name": "I am the map center!",
+                    "index": 2.0,
+                    "aggr": "sum"
+                  }
+                }
+              }
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "image\tboundary\n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\u003d\tPOLYGON ((103.46394 30.17543, 103.46394 31.042521, 104.553802 31.042521, 104.553802 30.17543, 103.46394 30.17543))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589261929305_1173498022",
+      "id": "paragraph_1589261929305_1173498022",
+      "dateCreated": "2020-05-12 13:38:49.307",
+      "dateStarted": "2020-05-31 16:41:18.624",
+      "dateFinished": "2020-05-31 16:41:46.022",
+      "status": "FINISHED"
+    },
+    {
+      "title": "成都市二环内地区11月滴滴订单时间分布（按小时）",
+      "text": "%sql\nselect * \nfrom orderByHour",
+      "user": "anonymous",
+      "dateUpdated": "2020-05-31 16:41:17.999",
+      "config": {
+        "colWidth": 4.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "h": "string",
+                      "orderNum": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "style": "stack"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "h",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "OrderCount",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "h\tOrderCount\n0\t135502\n1\t88525\n2\t58828\n3\t37733\n4\t35146\n5\t33285\n6\t62222\n7\t258779\n8\t368476\n9\t432543\n10\t406850\n11\t397037\n12\t396100\n13\t481837\n14\t481729\n15\t443922\n16\t434502\n17\t461802\n18\t432273\n19\t401241\n20\t378054\n21\t357619\n22\t299117\n23\t182815\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589201876269_1192496391",
+      "id": "paragraph_1589201876269_1192496391",
+      "dateCreated": "2020-05-11 20:57:56.269",
+      "dateStarted": "2020-05-31 16:41:18.004",
+      "dateFinished": "2020-05-31 16:41:18.632",
+      "status": "FINISHED"
+    },
+    {
+      "title": "成都市二环内地区11月滴滴订单时间分布（按天）",
+      "text": "%sql\nselect *\nfrom orderByDay",
+      "user": "anonymous",
+      "dateUpdated": "2020-05-31 16:41:18.004",
+      "config": {
+        "colWidth": 4.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "d": "string",
+                      "OrderCount": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "d",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "OrderCount",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "d\tOrderCount\n1\t209423\n2\t214650\n3\t218307\n4\t237759\n5\t242812\n6\t221031\n7\t218963\n8\t224371\n9\t224219\n10\t226460\n11\t251133\n12\t245368\n13\t220139\n14\t225184\n15\t231112\n16\t239042\n17\t238689\n18\t259406\n19\t257426\n20\t237050\n21\t227902\n22\t232174\n23\t235219\n24\t237916\n25\t257273\n26\t256406\n27\t242236\n28\t238868\n29\t247674\n30\t247725\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589203857188_1146805456",
+      "id": "paragraph_1589203857188_1146805456",
+      "dateCreated": "2020-05-11 21:30:57.188",
+      "dateStarted": "2020-05-31 16:41:18.214",
+      "dateFinished": "2020-05-31 16:41:18.797",
+      "status": "FINISHED"
+    },
+    {
+      "title": "成都市二环内地区11月滴滴订单时长分布",
+      "text": "%sql\nselect *\nfrom durations",
+      "user": "anonymous",
+      "dateUpdated": "2020-05-31 16:41:18.009",
+      "config": {
+        "colWidth": 4.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "duration": "string",
+                      "minutes": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "duration",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "minutes",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "duration\tminutes\n0\t6159\n1\t5046\n2\t12884\n3\t31434\n4\t59647\n5\t94718\n6\t132653\n7\t167053\n8\t196046\n9\t221438\n10\t241628\n11\t257083\n12\t268502\n13\t274886\n14\t279391\n15\t279898\n16\t277148\n17\t271887\n18\t265349\n19\t254725\n20\t244432\n21\t233202\n22\t220272\n23\t208239\n24\t194600\n25\t182569\n26\t170605\n27\t158564\n28\t147364\n29\t135934\n30\t125254\n31\t115265\n32\t106027\n33\t97232\n34\t90059\n35\t82127\n36\t76160\n37\t70270\n38\t64328\n39\t58699\n40\t53442\n41\t49491\n42\t45690\n43\t41925\n44\t38841\n45\t35787\n46\t32812\n47\t30093\n48\t27983\n49\t25796\n50\t23495\n51\t21824\n52\t19803\n53\t18435\n54\t17289\n55\t15839\n56\t14683\n57\t13263\n58\t12125\n59\t11298\n60\t10477\n61\t9590\n62\t8935\n63\t8027\n64\t7657\n65\t6794\n66\t6414\n67\t5738\n68\t5463\n69\t4908\n70\t4687\n71\t4239\n72\t4085\n73\t3575\n74\t3402\n75\t3118\n76\t2746\n77\t2595\n78\t2552\n79\t2130\n80\t2079\n81\t1846\n82\t1850\n83\t1676\n84\t1491\n85\t1428\n86\t1295\n87\t1149\n88\t1097\n89\t1029\n90\t889\n91\t841\n92\t935\n93\t727\n94\t690\n95\t657\n96\t612\n97\t593\n98\t566\n99\t513\n100\t481\n101\t466\n102\t402\n103\t388\n104\t363\n105\t365\n106\t275\n107\t267\n108\t253\n109\t264\n110\t245\n111\t202\n112\t173\n113\t198\n114\t147\n115\t159\n116\t157\n117\t151\n118\t144\n119\t123\n120\t107\n121\t128\n122\t129\n123\t97\n124\t79\n125\t87\n126\t79\n127\t66\n128\t77\n129\t90\n130\t72\n131\t71\n132\t64\n133\t62\n134\t46\n135\t73\n136\t61\n137\t59\n138\t55\n139\t47\n140\t47\n141\t25\n142\t33\n143\t27\n144\t42\n145\t41\n146\t35\n147\t37\n148\t22\n149\t23\n150\t31\n151\t18\n152\t25\n153\t26\n154\t25\n155\t28\n156\t17\n157\t20\n158\t22\n159\t14\n160\t14\n161\t11\n162\t20\n163\t21\n164\t14\n165\t11\n166\t20\n167\t20\n168\t9\n169\t15\n170\t9\n171\t12\n172\t10\n173\t13\n174\t12\n175\t7\n176\t4\n177\t10\n178\t7\n179\t17\n180\t11\n181\t6\n182\t3\n183\t3\n184\t3\n185\t5\n186\t2\n187\t7\n188\t4\n189\t4\n190\t7\n191\t13\n192\t3\n193\t6\n194\t3\n195\t7\n197\t4\n198\t4\n199\t5\n200\t4\n201\t1\n202\t3\n203\t1\n204\t2\n205\t7\n206\t2\n207\t8\n208\t8\n209\t6\n210\t7\n211\t1\n212\t3\n213\t2\n214\t3\n215\t2\n216\t4\n217\t11\n218\t5\n219\t7\n220\t3\n221\t6\n222\t11\n223\t6\n224\t2\n225\t2\n226\t6\n232\t6\n233\t3\n234\t2\n235\t6\n236\t1\n238\t4\n239\t2\n240\t1\n241\t1\n244\t5\n247\t2\n248\t2\n249\t6\n250\t1\n251\t8\n252\t3\n254\t4\n255\t1\n260\t1\n261\t2\n263\t1\n264\t1\n266\t2\n269\t2\n270\t2\n275\t2\n277\t6\n279\t6\n280\t2\n288\t3\n291\t4\n293\t4\n295\t3\n297\t1\n298\t2\n299\t6\n301\t5\n303\t1\n305\t2\n306\t1\n307\t5\n308\t5\n310\t3\n311\t1\n315\t2\n316\t2\n318\t2\n324\t1\n325\t1\n326\t6\n327\t2\n333\t1\n334\t2\n336\t1\n337\t1\n341\t4\n344\t1\n346\t2\n347\t5\n349\t3\n350\t3\n352\t2\n355\t2\n358\t6\n360\t2\n369\t1\n370\t1\n373\t1\n375\t2\n378\t1\n387\t2\n389\t4\n410\t1\n412\t5\n416\t1\n420\t3\n421\t2\n428\t7\n441\t2\n443\t1\n447\t5\n475\t2\n480\t1\n488\t8\n493\t2\n497\t4\n521\t2\n539\t1\n564\t1\n565\t1\n567\t2\n579\t1\n580\t2\n585\t2\n601\t1\n613\t2\n615\t1\n617\t5\n662\t2\n689\t3\n726\t4\n741\t2\n802\t1\n815\t2\n832\t1\n847\t1\n857\t1\n868\t2\n872\t3\n890\t1\n940\t1\n946\t1\n957\t1\n959\t4\n1052\t1\n1090\t3\n1204\t1\n1205\t1\n1213\t2\n1226\t1\n1285\t1\n1372\t1\n1373\t1\n1398\t9\n1406\t2\n1513\t3\n1535\t1\n1537\t2\n1585\t1\n1712\t6\n1840\t1\n2367\t1\n2450\t2\n2867\t1\n2996\t3\n4299\t2\n4708\t1\n5899\t6\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589202456362_893231553",
+      "id": "paragraph_1589202456362_893231553",
+      "dateCreated": "2020-05-11 21:07:36.362",
+      "dateStarted": "2020-05-31 16:41:18.415",
+      "dateFinished": "2020-05-31 16:41:19.951",
+      "status": "FINISHED"
+    },
+    {
+      "text": "// Statistics.\nimport org.datasyslab.geosparksql.utils.GeoSparkSQLRegistrator\nimport org.datasyslab.geosparkviz.sql.utils.GeoSparkVizRegistrator\nimport org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}\nimport org.apache.spark.sql.types.TimestampType\nimport org.apache.spark.sql.functions.unix_timestamp\nimport spark.sqlContext.implicits._\nimport java.sql.Timestamp\n\n// Zeppelin creates and injects sc (SparkContext) and sqlContext (HiveContext or SqlContext)\n// So you don\u0027t need create them manually\n\nGeoSparkSQLRegistrator.registerAll(spark)\nGeoSparkVizRegistrator.registerAll(spark)\n\n//File Path\n//Files: order\txa1\txa15\txa3\txa30\txa7\nval directoryPath \u003d \"/Users/2010youy01/Desktop/grad/data/\"\n\nval pointdf \u003d spark.read\n    .format(\"csv\")\n    .option(\"delimiter\", \",\")\n    .option(\"header\", \"false\")\n    .load(directoryPath + \"order4\")\n    .persist()\n\npointdf.createOrReplaceTempView(\"pointtable\")\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pointtable AS\n    |SELECT ST_Point(cast(pointtable._c3 as Decimal(24,20)),cast(pointtable._c4 as Decimal(24,20))) as pointStart, \n        ST_Point(cast(pointtable._c5 as Decimal(24,20)),cast(pointtable._c6 as Decimal(24,20))) as pointEnd,\n        _c1 as timeStart,\n        _c2 as timeEnd\n    |FROM pointtable\n  \"\"\".stripMargin).persist()\n  \nspark.table(\"pointtable\").show()\n\nspark.sql(\"\"\"\n    |CREATE OR REPLACE TEMP VIEW durations AS\n    |SELECT cast((timeEnd - timeStart)/60 as Int) as duration, count(*) as minutes\n    |FROM pointtable\n    |GROUP BY duration\n    |ORDER BY duration\n   \"\"\" )\n \nspark.sql(\"\"\"\n    |CREATE OR REPLACE TEMP VIEW orderByHour AS\n    |SELECT  hour(cast(cast(timeStart as Long) as timestamp)) as h, count(*) as OrderCount\n    |FROM pointtable\n    |GROUP BY h\n    |ORDER BY h\n    \"\"\")\n\nspark.sql(\"\"\"\n    |CREATE OR REPLACE TEMP VIEW orderByDay AS\n    |SELECT day(cast(cast(timeStart as Long) as timestamp)) as d, count(*) as OrderCount\n    |FROM pointtable\n    |GROUP BY d\n    |ORDER BY d \n    \"\"\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-10 10:28:06.412",
+      "config": {
+        "lineNumbers": true,
+        "tableHide": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "_c0",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "_c1",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {
+          "name": "5",
+          "time": "1478930901"
+        },
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589624131485_3287094",
+      "id": "paragraph_1589624131485_3287094",
+      "dateCreated": "2020-05-16 18:15:31.485",
+      "dateStarted": "2020-05-31 16:26:44.036",
+      "dateFinished": "2020-05-31 16:27:21.693",
+      "status": "FINISHED"
+    },
+    {
+      "text": "// Heat map.\nimport org.datasyslab.geosparksql.utils.GeoSparkSQLRegistrator\nimport org.datasyslab.geosparkviz.sql.utils.GeoSparkVizRegistrator\nimport org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}\nimport org.apache.spark.sql.types.TimestampType\nimport org.apache.spark.sql.functions.unix_timestamp\nimport spark.sqlContext.implicits._\nimport java.sql.Timestamp\n\n// Zeppelin creates and injects sc (SparkContext) and sqlContext (HiveContext or SqlContext)\n// So you don\u0027t need create them manually\n\nGeoSparkSQLRegistrator.registerAll(spark)\nGeoSparkVizRegistrator.registerAll(spark)\n\n//File Path\n//Files: order\txa1\txa15\txa3\txa30\txa7\nval directoryPath \u003d \"/Users/2010youy01/Desktop/grad/data/\"\nval startTime \u003d z.angular(\"startTime\").toString\nval endTime \u003d z.angular(\"endTime\").toString\ndef strToTimestamp(s: String): Long \u003d {\n  Timestamp.valueOf(s.replace(\"T\",\" \").replace(\"Z\", \"\")).getTime()/1000\n}\nval startOrder \u003d 1478930901\n\nval pointdf \u003d spark.read\n    .format(\"csv\")\n    .option(\"delimiter\", \",\")\n    .option(\"header\", \"false\")\n    .load(directoryPath + \"order4\")\n    .filter($\"_c2\".between(strToTimestamp(startTime),strToTimestamp(endTime)))\n    .persist()\n\npointdf.createOrReplaceTempView(\"pointtable\")\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pointtable AS\n    |SELECT ST_Point(cast(pointtable._c3 as Decimal(24,20)),cast(pointtable._c4 as Decimal(24,20))) as pointStart, \n        ST_Point(cast(pointtable._c5 as Decimal(24,20)),cast(pointtable._c6 as Decimal(24,20))) as pointEnd,\n        _c1 as timeStart,\n        _c2 as timeEnd\n    |FROM pointtable\n  \"\"\".stripMargin).persist()\n  \nspark.table(\"pointtable\").show()\n\nspark.sql(\"\"\"\n    |CREATE OR REPLACE TEMP VIEW durations AS\n    |SELECT cast((timeEnd - timeStart)/60 as Int) as duration, count(*) as minutes\n    |FROM pointtable\n    |GROUP BY duration\n    |ORDER BY duration\n   \"\"\" )\n \nspark.sql(\"\"\"\n    |CREATE OR REPLACE TEMP VIEW orderByHour AS\n    |SELECT  hour(cast(cast(timeStart as Long) as timestamp)) as h, count(*) as OrderCount\n    |FROM pointtable\n    |GROUP BY h\n    |ORDER BY h\n    \"\"\")\n\nspark.sql(\"\"\"\n    |CREATE OR REPLACE TEMP VIEW orderByDay AS\n    |SELECT day(cast(cast(timeStart as Long) as timestamp)) as d, count(*) as OrderCount\n    |FROM pointtable\n    |GROUP BY d\n    |ORDER BY d \n    \"\"\")\nspark.table(\"orderByDay\").show()\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW boundtable AS\n    |SELECT ST_Envelope_Aggr(pointStart) as bound FROM pointtable\n  \"\"\".stripMargin)\nval boundDF \u003d spark.sql(\"SELECT * FROM boundtable\")\n\nval pixelsDF \u003d spark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixels AS\n    |SELECT pixel, pointStart FROM pointtable\n    |LATERAL VIEW ST_Pixelize(ST_Transform(pointStart, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027), 256, 256, (SELECT ST_Transform(bound, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027) FROM boundtable)) AS pixel\n  \"\"\".stripMargin)\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixelaggregates AS\n    |SELECT pixel, count(*) as weight\n    |FROM pixels\n    |GROUP BY pixel\n  \"\"\".stripMargin)\n  spark.table(\"pixelaggregates\").show()\n\nval imgDF \u003d spark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW images AS\n    |SELECT ST_EncodeImage(ST_Render(pixel, ST_Colorize(weight, (SELECT max(weight) FROM pixelaggregates)))) AS image, (SELECT ST_AsText(bound) FROM boundtable) AS boundary\n    |FROM pixelaggregates\n  \"\"\".stripMargin).persist()\n\nspark.table(\"images\").show()\n\n/*\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW wktpoint AS\n    |SELECT ST_AsText(shape) as geom\n    |FROM pointtable\n  \"\"\".stripMargin)\n  \n\n  spark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pointtable AS\n    |SELECT *\n    |FROM pointtable\n    |WHERE ST_Contains(ST_PolygonFromEnvelope(-126.790180,24.863836,-64.630926,50.000),shape)\n  \"\"\".stripMargin)\n */",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-10 10:28:19.006",
+      "config": {
+        "lineNumbers": true,
+        "tableHide": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "_c0",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "_c1",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {
+          "name": "5",
+          "time": "1478930901"
+        },
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.lang.NullPointerException\n  ... 59 elided\n"
+          }
+        ]
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589191353335_-554235780",
+      "id": "20190227-203333_1886473378",
+      "dateCreated": "2020-05-11 18:02:33.335",
+      "dateStarted": "2020-05-31 16:42:30.940",
+      "dateFinished": "2020-05-31 16:42:31.531",
+      "status": "ERROR"
+    },
+    {
+      "text": "//Geospatial subtraction.\nimport org.datasyslab.geosparksql.utils.GeoSparkSQLRegistrator\nimport org.datasyslab.geosparkviz.sql.utils.GeoSparkVizRegistrator\nimport org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}\nimport org.apache.spark.sql.types.TimestampType\nimport org.apache.spark.sql.functions.unix_timestamp\nimport spark.sqlContext.implicits._\nimport java.sql.Timestamp\n\n// Zeppelin creates and injects sc (SparkContext) and sqlContext (HiveContext or SqlContext)\n// So you don\u0027t need create them manually\n\nGeoSparkSQLRegistrator.registerAll(spark)\nGeoSparkVizRegistrator.registerAll(spark)\n\n//File Path\n//Files: order\txa1\txa15\txa3\txa30\txa7\nval directoryPath \u003d \"/Users/2010youy01/Desktop/grad/data/\"\n\ndef strToTimestamp(s: String): Long \u003d {\n  Timestamp.valueOf(s.replace(\"T\",\" \").replace(\"Z\", \"\")).getTime()/1000\n}\n\nval startOrder \u003d 1478930901\nval range1 \u003d (1478016000, 1478102400)\nval range2 \u003d (1478275200, 1478361600)\n\nval pointdf \u003d spark.read\n    .format(\"csv\")\n    .option(\"delimiter\", \",\")\n    .option(\"header\", \"false\")\n    .load(directoryPath + \"order4\")\n    //filter($\"_c2\".between(range1._1, range1._2))\n    .persist()\n    \n\npointdf.createOrReplaceTempView(\"pointtable\")\nval df1\u003d spark.sql(\n  s\"\"\"\n    |CREATE OR REPLACE TEMP VIEW pointtable AS\n    |SELECT ST_Point(cast(pointtable._c3 as Decimal(24,20)),cast(pointtable._c4 as Decimal(24,20))) as pointStart, \n        ST_Point(cast(pointtable._c5 as Decimal(24,20)),cast(pointtable._c6 as Decimal(24,20))) as pointEnd,\n        _c1 as timeStart,\n        _c2 as timeEnd\n    |FROM pointtable\n    |WHERE (_c1 between ${range1._1} and ${range1._2}) OR (_C1 between ${range2._1} and ${range2._2})\n  \"\"\".stripMargin).persist()\nspark.table(\"pointtable\").show()\n\nspark.sql(\n  s\"\"\"\n    |CREATE OR REPLACE TEMP VIEW boundtable AS\n    |SELECT ST_Envelope_Aggr(pointStart) as bound FROM pointtable\n  \"\"\".stripMargin)\nval boundDF \u003d spark.sql(\"SELECT * FROM boundtable\")\n\nval pixelsDF \u003d spark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixels AS\n    |SELECT pixel, pointStart, timeStart FROM pointtable\n    |LATERAL VIEW ST_Pixelize(ST_Transform(pointStart, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027), 256, 256, (SELECT ST_Transform(bound, \u0027epsg:4326\u0027,\u0027epsg:3857\u0027) FROM boundtable)) AS pixel\n  \"\"\".stripMargin)\n\nspark.sql(s\"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixels1 AS\n    |SELECT pixel, pointStart, timeStart\n    |FROM pixels\n    |WHERE pixels.timeStart between ${range1._1} and ${range1._2}\n    \"\"\")\nspark.sql(s\"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixels2 AS\n    |SELECT pixel, pointStart, timeStart\n    |FROM pixels\n    |WHERE pixels.timeStart between ${range2._1} and ${range2._2}\n    \"\"\")\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixelaggregates1 AS\n    |SELECT pixel, count(*) as weight\n    |FROM pixels1\n    |GROUP BY pixel\n  \"\"\".stripMargin)\n  \nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixelaggregates2 AS\n    |SELECT pixel, count(*) as weight\n    |FROM pixels2\n    |GROUP BY pixel\n  \"\"\".stripMargin)\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pixelaggregates AS\n    |SELECT  pixelaggregates2.pixel, (pixelaggregates2.weight - pixelaggregates1.weight) as weight\n    |FROM pixelaggregates1, pixelaggregates2\n    |WHERE pixelaggregates2.pixel \u003d pixelaggregates1.pixel\n  \"\"\".stripMargin)\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW images AS\n    |SELECT ST_EncodeImage(ST_Render(pixel, ST_Colorize(weight, (SELECT max(weight) FROM pixelaggregates)))) AS image, (SELECT ST_AsText(bound) FROM boundtable) AS boundary\n    |FROM pixelaggregates\n  \"\"\".stripMargin).persist()\n\nspark.table(\"images\").show()\n/*\n\nspark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW wktpoint AS\n    |SELECT ST_AsText(shape) as geom\n    |FROM pointtable\n  \"\"\".stripMargin)\n  \n\n  spark.sql(\n  \"\"\"\n    |CREATE OR REPLACE TEMP VIEW pointtable AS\n    |SELECT *\n    |FROM pointtable\n    |WHERE ST_Contains(ST_PolygonFromEnvelope(-126.790180,24.863836,-64.630926,50.000),shape)\n  \"\"\".stripMargin)\n */",
+      "user": "anonymous",
+      "dateUpdated": "2020-06-10 10:28:27.715",
+      "config": {
+        "lineNumbers": true,
+        "tableHide": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "_c0",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "_c1",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {
+          "name": "5",
+          "time": "1478930901"
+        },
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589263090299_-1444387550",
+      "id": "paragraph_1589263090299_-1444387550",
+      "dateCreated": "2020-05-12 13:58:10.299",
+      "dateStarted": "2020-05-31 16:26:43.829",
+      "dateFinished": "2020-05-31 16:27:08.837",
+      "status": "FINISHED"
+    },
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "2020-05-31 12:17:52.321",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1589266362165_-731733818",
+      "id": "paragraph_1589266362165_-731733818",
+      "dateCreated": "2020-05-12 14:52:42.166",
+      "status": "READY"
+    }
+  ],
+  "name": "成都滴滴订单数据时空特征可视化",
+  "id": "2F95297H1",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "spark-shared_process": [
+      {
+        "name": "startTime",
+        "object": "2016-11-16T17:00:00.000Z",
+        "noteId": "2F95297H1",
+        "paragraphId": "20190227-203333_1886473378"
+      },
+      {
+        "name": "endTime",
+        "object": "2016-11-16T17:10:00.000Z",
+        "noteId": "2F95297H1",
+        "paragraphId": "20190227-203333_1886473378"
+      }
+    ]
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "report",
+    "personalizedMode": "false"
+  },
+  "info": {}
+}
